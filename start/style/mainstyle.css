@@ -1,14 +1,87 @@
-h1{
-    padding-top: 20px;
-    text-align: center;
-    font-family: 'Iosevka Slab Web';
+:root{
+  --Dark:         #001524;
+  --Secondary:    #a3bac3;
+  --Accents:      #23ce6b;
+  --Font:         #cdd9d2;
 }
-.links{
-    /* center this div*/
-    margin: auto;
-    width: 50%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-    font-family: 'Iosevka Slab Web';
+html {
+  align-items: center;
+  display: flex;
+  height: auto;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  color: var(--Font);
+  background: var(--Dark);
+  font-family: Iosevka Slab Web;
+  margin-right: 9em;
+  padding: 1em;
+}
+
+img {
+  height: auto;
+  width: 350px;
+  margin-right: 2em;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+nav {
+  display: grid;
+  grid-row-gap: 1em;
+  grid-template-columns: 1fr 1fr;
+  min-width: 24em;
+  grid-auto-rows: max-content;
+}
+
+h1 {
+  font-size: 2.2em;
+  font-weight: 600;
+  grid-column: 1/-1;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #525252;
+  grid-column: 1/-1;
+  text-align: center;
+  margin-bottom: 2.3em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  list-style-type: none;
+}
+
+li {
+  line-height: 1.4em;
+  margin-left: 4.8em;
+}
+
+li:first-child {
+  display: inline-block;
+  color: #89DCEB;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+  line-height: 2em;
+  margin-left: 2.5em;
+}
+
+a {
+  color: #D9E0EE;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FAE3B0;
+  font-style: italic;
 }
